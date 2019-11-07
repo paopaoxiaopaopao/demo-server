@@ -1,65 +1,98 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+*.class
 
-# compiled output
-/dist
-/dist-server
-/tmp
-/out-tsc
-/src/main/resources/static
+# Package Files #
+*.jar
+*.war
+*.ear
+!ru.alfabank.opp.*.ear
+*.pydevproject
+.project
+.metadata
+target/
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.settings
+.springBeans
+.gradle
+!gradle-wrapper.jar
+build
+bin
+git.properties
 
-# dependencies
-/node_modules
+# External tool builders
+.externalToolBuilders/
 
-# IDEs and editors
-/.idea
-/*/.project
-/*/.classpath
-/*/.c9/
-/*/*.launch
-/*/.settings/
-/*/*.sublime-workspace
-/*/target
-/*/.factorypath
-/*/*.log
-/*/*.bpmn
-/*/*.apt_generated
-/.project
-/.classpath
-/.c9/
-/*.launch
-/.settings/
-/*.sublime-workspace
-/target
-/.factorypath
-/*.log
-/*.bpmn
-/*.apt_generated
+# Locally stored "Eclipse launch configurations"
+*.launch
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# CDT-specific
+.cproject
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
+# PDT-specific
 
-# e2e
-/e2e/*.js
-/e2e/*.map
-
-# System Files
+.buildpath
+*.iml
+*.ipr
+*.iws
+.idea/
+**/*.iml
+**/.idea/
+*~
+.gradle
+/build
+/out
+/intTestHomeDir
+/subprojects/*/out
+/intellij
+/reports
+/buildSrc/lib
+/buildSrc/build
+/subprojects/*/build
+/subprojects/docs/src/samples/*/*/build
+/website/build
+/website/website.iml
+/website/website.ipr
+/website/website.iws
+/performanceTest/build
+/subprojects/*/ide
+/*.iml
+/*.ipr
+/*.iws
+/subprojects/*/*.iml
+/buildSrc/*.ipr
+/buildSrc/*.iws
+/buildSrc/*.iml
+/buildSrc/out
+*.classpath
+*.project
+*.settings
+/bin
+/subprojects/*/bin
 .DS_Store
-Thumbs.db
-.mvn/wrapper/maven-wrapper.jar
-*.mvn/*
-*.springBeans
-*.gz
-smart-retailing-web.iml
+/performanceTest/lib
+.textmate
+/incoming-distributions
+.idea
+*.iml
+*.sublime-*
+.nb-gradle
+/classes
+build
+gradle.properties
+checkstyle-config.xml
+pmd-config.xml
+findbugs-config.xml
+derbyDB
+derby.log
+*.log
+**/resources/rebel.xml
+*.factorypath
