@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @MapperScan("com.paopao.mycloud.dao")
 @EnableFeignClients
+@EnableEurekaClient
 public class DemoApplication {
 
 
@@ -27,7 +29,7 @@ public class DemoApplication {
 
 	@GetMapping("test")
 	public String test(HttpServletRequest request, HttpServletResponse response) {
-		String id = request.getSession(false).getId();
+		String id = request.getSession(true).getId();
 		return "sessionid: " + id;
 	}
 	
